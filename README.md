@@ -2,6 +2,7 @@
 Turning complex, messy systems into ordered, optimized, self-improving ones — with a human always in the loop. Human-AI codesign
 > One big model guesses. A crystalline agent team checks, connects, optimizes, and explains.
 
+<img width="773" height="665" alt="image" src="https://github.com/user-attachments/assets/95be034d-df20-4721-86c8-e3567eb264ea" />
 *All demos use synthetic / dummy data only. They illustrate the method, not any real matter. The system flags candidates for human review; it does not decide outcomes.*
 
 ---
