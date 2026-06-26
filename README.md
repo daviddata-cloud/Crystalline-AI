@@ -168,6 +168,17 @@ python or_with_charts.py
 ```
 
 ---
+## The name
+
+A rock and a crystal can contain similar material, but the crystal is stronger because its structure is ordered. Crystalline AI turns a working-but-messy AI workflow into an ordered, modular, testable system.
+
+> The model is the brain.  
+> The architecture is the nervous system.  
+> Operations Research helps set the priority.  
+> The feedback loop helps the system improve.  
+> The human expert holds the wheel.
+
+---
 
 ## Why this matters for regulated / federal work
 
@@ -188,4 +199,17 @@ Crystalline AI brings together components demonstrated in these repos:
 - **[ai-knowledge-workbench-GRAPHrag](https://github.com/daviddata-cloud/ai-knowledge-workbench-GRAPHrag)** — the GraphRAG retrieval + knowledge layer (private wiki, live web search, gap detection, multi-agent reasoning).
 - 
 - **[causal-ai-dag](https://github.com/daviddata-cloud/causal-ai-dag)** — the causal reasoning layer (DAG discovery, intervention, counterfactual what-if; PCMCI, do-calculus).
+---
+## Honest scope
+
+This repository is an educational proof-of-concept reference pattern using synthetic or public demo data. It is not a deployed product, not legal, investment, enforcement, medical, or policy guidance, and not a claim about any real case, agency matter, company, market, or investigation.
+
+Causal discovery, optimization, and multi-agent evaluation depend on assumptions that must be checked against real data and domain expertise. Where the method cannot decide, the uncertainty should remain visible for human review.
+
+The goal is not automatic decision-making. The goal is to make evidence, assumptions, limitations, and review points clearer for human experts.
+
+---
+## License
+
+MIT
 ---
