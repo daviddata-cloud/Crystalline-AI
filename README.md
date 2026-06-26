@@ -180,19 +180,12 @@ The same pattern fits structured disclosure, risk analysis, and oversight:
 
 Built-in controls: permission-aware retrieval, data classification, audit logs, citation checks, run-to-run comparison, and a human review gate.
 
+
+## Related repositories
+
+Crystalline AI brings together components demonstrated in these repos:
+
+- **[ai-knowledge-workbench-GRAPHrag](https://github.com/daviddata-cloud/ai-knowledge-workbench-GRAPHrag)** — the GraphRAG retrieval + knowledge layer (private wiki, live web search, gap detection, multi-agent reasoning).
+- 
+- **[causal-ai-dag](https://github.com/daviddata-cloud/causal-ai-dag)** — the causal reasoning layer (DAG discovery, intervention, counterfactual what-if; PCMCI, do-calculus).
 ---
-
-## The name
-
-A rock and a crystal hold similar material — but the crystal is stronger because its structure is *ordered*. Crystalline AI turns a working-but-messy system into an ordered, optimized, self-improving one.
-
-> The model is the brain. The architecture is the nervous system. Operations Research sets the destination. The loop is how it gets there. The human holds the wheel.
-
----
-
-## Honest scope
-
-This is an educational, proof-of-concept reference pattern on synthetic data. It is not a deployed product, not investment/legal/enforcement guidance, and not a claim about any real matter. Causal discovery and optimization rest on assumptions that must be checked against real data; where the method cannot decide, the ambiguity is left visible for human review.
-
-## License
-MIT
