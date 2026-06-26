@@ -3,6 +3,7 @@ Turning complex, messy systems into ordered, optimized, self-improving ones — 
 > One big model guesses. A crystalline agent team checks, connects, optimizes, and explains.
 
 <img width="773" height="665" alt="image" src="https://github.com/user-attachments/assets/95be034d-df20-4721-86c8-e3567eb264ea" />
+
 *All demos use synthetic / dummy data only. They illustrate the method, not any real matter. The system flags candidates for human review; it does not decide outcomes.*
 
 ---
@@ -152,7 +153,14 @@ It records what was searched, what was found, what was *not* found, the assumpti
 ## Demos (synthetic data)
 
 - **Graph detection + Operations Research triage** — graph rules flag relationship issues (peer outliers, shared-auditor clusters, cross-filing mismatches); OR picks which flagged items a human reviews first within a limited budget. (`or_with_charts.py`)
+
+<img width="895" height="676" alt="image" src="https://github.com/user-attachments/assets/46489ba5-e8e7-4a1f-9f32-30b3b4d57b77" />
+
+
 - **Causal AI with DAGs** — discovery, intervention, and counterfactual what-if (PCMCI, do-calculus) — tests whether a relationship is credible, not just correlated.
+<img width="1121" height="687" alt="image" src="https://github.com/user-attachments/assets/9fa4a7d6-1ac6-4c6e-9384-e81d1b6fcb70" />
+
+
 
 ```bash
 pip install networkx matplotlib
