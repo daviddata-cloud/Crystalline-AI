@@ -162,14 +162,28 @@ By applying Graph Theory, Community Detection, and do-calculus to standard messy
 ### 📊 New Modules & Capabilities
 
 #### 1. 💎 Crystalline Triage Graph (Automated Bottleneck Detection)
+The Problem: Audit teams and risk managers have limited time and budgets. They cannot manually review hundreds of complex, interdependent Standard Operating Procedures (SOPs) and often don't know where the hidden structural risks lie.
+
+The Solution: Implemented a force-directed clustering algorithm (Barnes-Hut physics) that maps document relationships. It automatically applies Operations Research triage rules to flag overly complex workflows (Red Nodes) and shared, high-dependency bottlenecks (Amber Nodes).
+
+The Impact: Transforms a tangled, messy knowledge base into a prioritized operations matrix. It directs limited human expert hours exclusively to the highest-risk structural vulnerabilities, massively increasing audit efficiency.
+
 Applies a **Barnes-Hut physics clustering algorithm** to dynamically group highly coupled operational data into distinct visual "hives."
 * **Systemic Triage:** Instantly flags hyper-complex workflows (Red Nodes) and shared structural bottlenecks (Amber Nodes).
 * **Visualizing Friction:** High-risk relationships (complex docs relying on shared vulnerable entities) are isolated with red dashed lines, showing teams exactly where to allocate audit hours.
+* <img width="1126" height="910" alt="image" src="https://github.com/user-attachments/assets/c4c8c71b-e749-4754-92c3-855479353e5e" />
+
 <img width="778" height="506" alt="image" src="https://github.com/user-attachments/assets/5153e5b7-a665-4963-b78a-a9a170871052" />
 
 
-
 #### 2. 🏢 Ideal Org Structure Map (AI Community Detection)
+The Problem: Legacy organizational structures (departments/silos) often misalign with actual day-to-day operational workflows, causing communication friction, delayed hand-offs, and administrative overhead.
+
+The Solution: Applied NetworkX Greedy Modularity (Louvain-based community detection algorithms) to trace actual SOP dependencies and mathematically cluster them into optimized, cross-functional "Agile Org Pods."
+
+The Impact: Provides executive leadership with a purely data-backed blueprint for organizational restructuring. It minimizes inter-departmental friction and breaks down isolated operational silos by grouping teams based on actual workflow reality.
+<img width="1470" height="472" alt="image" src="https://github.com/user-attachments/assets/e66cc292-9129-4d1b-83c4-af17a250a0f7" />
+
 Answers the question: *"Based on how our processes actually interact, how should our teams be structured?"*
 * Utilizes **NetworkX Greedy Modularity (Louvain-based algorithm)** to map the hidden structure of enterprise workflows.
 * Automatically clusters highly interconnected SOPs into isolated, color-coded "Agile Org Pods."
@@ -178,16 +192,36 @@ Answers the question: *"Based on how our processes actually interact, how should
 
 
 #### 3. 🚨 Critical Path Method (CPM) Vulnerability Map
+The Problem: In complex enterprise systems, it is incredibly difficult to identify which specific sequence of tasks, if delayed or compromised, will cause a cascading failure across the entire operational pipeline.
+
+The Solution: Architected a Directed Acyclic Graph (DAG) algorithm to calculate and extract the absolute longest dependency chain within the enterprise knowledge base, highlighting this "Critical Path" in high-contrast visual routes.
+
+The Impact: Empowers operations directors to proactively fortify fragile workflows. It shows exactly where redundancy and backup resources must be allocated to prevent a single point of failure from halting the entire system.
+
+<img width="760" height="574" alt="image" src="https://github.com/user-attachments/assets/ac447966-9e16-44a2-81ee-f22de0ee0996" />
 Architects a Directed Acyclic Graph (DAG) analysis to calculate the longest operational dependency chain within the knowledge base.
 * Visualizes the **"Critical Path"** using weighted, high-contrast red paths.
 * Isolates the exact sequence of operational documents most susceptible to cascading delays, empowering leaders to proactively fortify fragile workflows.
 
 
-#### 4. 🔗 Causal AI & Counterfactual Stress Testing
+#### 4. 🔗Causal AI & Counterfactual Stress Testing (DAG & Sensitivity)
+The Problem: Traditional predictive AI only shows correlation (what might happen based on the past). It cannot answer interventional questions like "What happens if we change this specific policy?" or "How much stress can this system take?"
+
+The Solution: Built a do-calculus simulation engine that allows users to select a specific node, inject a failure, and calculate the downstream mathematical ripple effect. Added a dynamic Dose-Response Sensitivity chart to plot failure probabilities from 1% to 100% severity.
+
+The Impact: Shifts enterprise AI from passive prediction to active strategic simulation. It allows Risk Officers to "stress-test" policies and establish mathematical safety thresholds before a real-world crisis occurs.
+<img width="1139" height="539" alt="image" src="https://github.com/user-attachments/assets/e5e6787f-2cdb-4eb3-b6b3-1ae76100116e" />
+<img width="1319" height="560" alt="image" src="https://github.com/user-attachments/assets/e909b1a8-3de4-49af-9718-6149455b1380" />
+
 * **Mathematical Ripple Effects:** Select any single point of failure (SOP) and run a "What-If" (`do-calculus`) simulation to see exactly which downstream processes will collapse.
 * **Sensitivity Analysis:** Generates dynamic Dose-Response charts detailing how total system vulnerability scales as a root-cause document's failure likelihood increases from 0% to 100%.
 
-#### 5. 📊 Executive Risk & ROI Dashboard
+#### 5. 📊Executive Risk & ROI Dashboard (Tornado, Waterfall, Heatmap)
+The Problem: In complex enterprise systems, it is incredibly difficult to identify which specific sequence of tasks, if delayed or compromised, will cause a cascading failure across the entire operational pipeline.
+
+The Solution: Architected a Directed Acyclic Graph (DAG) algorithm to calculate and extract the absolute longest dependency chain within the enterprise knowledge base, highlighting this "Critical Path" in high-contrast visual routes.
+
+The Impact: Empowers operations directors to proactively fortify fragile workflows. It shows exactly where redundancy and backup resources must be allocated to prevent a single point of failure from halting the entire system.
 While the network graphs provide deep operational context for engineers, the Executive Dashboard translates graph mathematics into high-level business intelligence:
 * **Vulnerability Tornado Chart:** Translates *Betweenness Centrality* scores into a ranked list of the most dangerous systemic bottlenecks.
 * **Intervention ROI Waterfall:** Quantifies the exact systemic risk reduction (Return on Investment) achieved by fixing the top 3 most vulnerable SOPs.
