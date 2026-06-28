@@ -4,7 +4,7 @@ Turning complex, messy systems into ordered, optimized, self-improving ones — 
 
 <img width="773" height="665" alt="image" src="https://github.com/user-attachments/assets/95be034d-df20-4721-86c8-e3567eb264ea" />
 
-*All demos use synthetic / dummy data only. They illustrate the method, not any real matter. The system flags candidates for human review; it does not decide outcomes.*
+*All demos use synthetic data only. This Agent  "dynamically" parses "synthetic" operational text documents (like internal Standard Operating Procedures) and mathematically maps their relationships, vulnerabilities, and bottlenecks in a live Flask application."They illustrate the method, not any real matter. The system flags candidates for human review; it does not decide outcomes.*
 
 ---
 
@@ -152,46 +152,8 @@ It records what was searched, what was found, what was *not* found, the assumpti
 
 ## Demos (synthetic data)
 
-- **Graph detection + Operations Research triage** — graph rules flag relationship issues (peer outliers, shared-auditor clusters, cross-filing mismatches); OR picks which flagged items a human reviews first within a limited budget. (`or_with_charts.py`)
-
-<img width="895" height="676" alt="image" src="https://github.com/user-attachments/assets/46489ba5-e8e7-4a1f-9f32-30b3b4d57b77" />
-
-
-- **Causal AI with DAGs** — discovery, intervention, and counterfactual what-if (PCMCI, do-calculus) — tests whether a relationship is credible, not just correlated.
-<img width="1121" height="687" alt="image" src="https://github.com/user-attachments/assets/9fa4a7d6-1ac6-4c6e-9384-e81d1b6fcb70" />
-
-
-
-```bash
-pip install networkx matplotlib
-python or_with_charts.py
-```
-
----
-## The name
-
-A rock and a crystal can contain similar material, but the crystal is stronger because its structure is ordered. Crystalline AI turns a working-but-messy AI workflow into an ordered, modular, testable system.
-
-> The model is the brain.  
-> The architecture is the nervous system.  
-> Operations Research helps set the priority.  
-> The feedback loop helps the system improve.  
-> The human expert holds the wheel.
-
----
-
-## Why this matters for regulated / federal work
-
-The same pattern fits structured disclosure, risk analysis, and oversight:
-- **Graph** describes relationships across records.
-- **Operations Research** spends scarce expert time on the highest-risk items.
-- **Causal AI** tests whether a flag is a real signal or coincidence.
-- **The loop** improves the system toward a measured goal.
-- **The human** decides anything consequential.
-
-Built-in controls: permission-aware retrieval, data classification, audit logs, citation checks, run-to-run comparison, and a human review gate.
-
-## 🚀 Latest Update: Operations Research & Causal AI Dashboards
+- **Graph detection + Operations Research triage** — graph rules flag relationship issues (peer outliers, shared-auditor clusters, cross-filing mismatches);
+- ## 🚀 Latest Update: Operations Research & Causal AI Dashboards
 
 We have drastically expanded **Crystalline AI** from a standard GraphRAG knowledge base into a dynamic, mathematical **Operations Research and Risk Engine**. 
 
@@ -235,6 +197,42 @@ While the network graphs provide deep operational context for engineers, the Exe
 
 
 <img width="1147" height="558" alt="image" src="https://github.com/user-attachments/assets/9448554c-5a4c-4bd3-af18-557e838f1533" />
+
+
+- **Causal AI with DAGs** — discovery, intervention, and counterfactual what-if (PCMCI, do-calculus) — tests whether a relationship is credible, not just correlated.
+<img width="1121" height="687" alt="image" src="https://github.com/user-attachments/assets/9fa4a7d6-1ac6-4c6e-9384-e81d1b6fcb70" />
+
+
+
+```bash
+pip install networkx matplotlib
+python or_with_charts.py
+```
+
+---
+## The name
+
+A rock and a crystal can contain similar material, but the crystal is stronger because its structure is ordered. Crystalline AI turns a working-but-messy AI workflow into an ordered, modular, testable system.
+
+> The model is the brain.  
+> The architecture is the nervous system.  
+> Operations Research helps set the priority.  
+> The feedback loop helps the system improve.  
+> The human expert holds the wheel.
+
+---
+
+## Why this matters for regulated / federal work
+
+The same pattern fits structured disclosure, risk analysis, and oversight:
+- **Graph** describes relationships across records.
+- **Operations Research** spends scarce expert time on the highest-risk items.
+- **Causal AI** tests whether a flag is a real signal or coincidence.
+- **The loop** improves the system toward a measured goal.
+- **The human** decides anything consequential.
+
+Built-in controls: permission-aware retrieval, data classification, audit logs, citation checks, run-to-run comparison, and a human review gate.
+
 
 
 ### 🛠️ How to Run the New UI
