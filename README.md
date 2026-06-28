@@ -225,6 +225,17 @@ Architects a Directed Acyclic Graph (DAG) analysis to calculate the longest oper
 * **Mathematical Ripple Effects:** Select any single point of failure (SOP) and run a "What-If" (`do-calculus`) simulation to see exactly which downstream processes will collapse.
 * **Sensitivity Analysis:** Generates dynamic Dose-Response charts detailing how total system vulnerability scales as a root-cause document's failure likelihood increases from 0% to 100%.
 
+#### 5. 📊 Executive Risk & ROI Dashboard
+While the network graphs provide deep operational context for engineers, the Executive Dashboard translates graph mathematics into high-level business intelligence:
+* **Vulnerability Tornado Chart:** Translates *Betweenness Centrality* scores into a ranked list of the most dangerous systemic bottlenecks.
+* **Intervention ROI Waterfall:** Quantifies the exact systemic risk reduction (Return on Investment) achieved by fixing the top 3 most vulnerable SOPs.
+* **Cross-Domain Contagion Heatmap:** Maps causal influence weights into a matrix, revealing hidden friction and risk transmission between different departments (e.g., IT vs. Lab Ops).
+
+*(Add your Executive Dashboard Screenshot here: `![Executive Dashboard](images/executive-dashboard.png)`)*
+
+<img width="1147" height="558" alt="image" src="https://github.com/user-attachments/assets/9448554c-5a4c-4bd3-af18-557e838f1533" />
+
+
 ### 🛠️ How to Run the New UI
 The new visualization engine is built on Flask, NetworkX, Matplotlib, and vis.js.
 
