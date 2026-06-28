@@ -231,7 +231,8 @@ While the network graphs provide deep operational context for engineers, the Exe
 * **Intervention ROI Waterfall:** Quantifies the exact systemic risk reduction (Return on Investment) achieved by fixing the top 3 most vulnerable SOPs.
 * **Cross-Domain Contagion Heatmap:** Maps causal influence weights into a matrix, revealing hidden friction and risk transmission between different departments (e.g., IT vs. Lab Ops).
 
-*(Add your Executive Dashboard Screenshot here: `![Executive Dashboard](images/executive-dashboard.png)`)*
+<img width="409" height="943" alt="image" src="https://github.com/user-attachments/assets/47df49bf-8eb8-4934-a497-e8999f0f6bfd" />
+
 
 <img width="1147" height="558" alt="image" src="https://github.com/user-attachments/assets/9448554c-5a4c-4bd3-af18-557e838f1533" />
 
