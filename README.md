@@ -1,304 +1,111 @@
-# Crystalline-AI
-Turning complex, messy systems into ordered, optimized, self-improving ones — with a human always in the loop. Human-AI codesign
-> One big model guesses. A crystalline agent team checks, connects, optimizes, and explains.
+## 🚀 Latest Upgrade: From Static Charts to a Dynamic Operations Research UI
 
-<img width="773" height="665" alt="image" src="https://github.com/user-attachments/assets/95be034d-df20-4721-86c8-e3567eb264ea" />
+Crystalline AI has evolved from static Python/Matplotlib proof-of-concept charts into an interactive Flask-based analytical application for graph reasoning, risk triage, and executive decision support.
 
-*All demos use synthetic data only. This Agent  "dynamically" parses "synthetic" operational text documents (like internal Standard Operating Procedures) and mathematically maps their relationships, vulnerabilities, and bottlenecks in a live Flask application."They illustrate the method, not any real matter. The system flags candidates for human review; it does not decide outcomes.*
+The current demo dynamically parses synthetic SOP-style operational documents, builds relationship graphs, and exposes multiple live analytical views through a web UI. The goal is not automatic decision-making. The goal is to help human experts see hidden structure, bottlenecks, causal exposure, and intervention priorities faster.
 
----
+**Technology stack:** Python, Flask, NetworkX, vis.js, Matplotlib, graph analytics, causal DAG concepts, Operations Research triage, and human-in-the-loop review.
 
-## The core idea
-
-Most real systems start like **raw rock**: they work, but they are disordered, redundant, and inefficient. The goal is to turn them into **crystal** — the same material, but with an ordered, optimized structure that is stronger and more efficient.
-
-Crystalline AI does this with three ideas working together:
-
-| Idea | Role | Plain English |
-|---|---|---|
-| **Multi-agent architecture** | the structure | A team of small specialized agents, each doing one job, instead of one large black-box model |
-| **Operations Research** | the goal | Defines what "best" means and finds the most efficient path under real constraints (time, budget, reviewers) |
-| **Autoresearch loop** | the improvement | The system measures itself against the goal, tries improvements, and iterates — guided, logged, and human-reviewed |
-
-**The progression:** raw system → set a goal (OR) → improve in a loop (autoresearch) → ordered, optimized "crystal."
+**Scope:** Synthetic/demo data only. The system illustrates a reusable method for regulated and enterprise workflows; it does not make claims about any real agency matter, company, case, policy, market, or investigation.
+<img width="975" height="839" alt="image" src="https://github.com/user-attachments/assets/f4fc45d8-8d80-4412-9d44-82709db003a7" />
 
 ---
 
-## The structure is a graph — and a causal DAG
+## Dynamic Analytical Modules
 
-Crystalline AI is not a list of steps. Its structure **is a directed graph**:
+### 1. 💎 Crystalline Triage Graph — Automated Bottleneck Detection
 
-- **Each agent is a node.** Each hand-off is a directed edge. The flow has no loops within a pass — it is a **Directed Acyclic Graph (DAG)**, which makes it ordered, traceable, and easy to audit.
-- **The reasoning layer is also a DAG.** The Relationship agent builds a graph of entities; the Causal agent uses a **causal DAG** (cause → effect, with the do() operator) to test whether a relationship is credible, not just correlated.
-- **Why this matters:** a graph structure lets the system express *relationships* a flat pipeline can't — which agent depends on which, which evidence supports which finding, and what causes what. The graph describes; Operations Research optimizes; causal DAG tests credibility; the human decides.
+**Problem:** Audit teams and risk managers cannot manually inspect every complex SOP, dependency, and workflow relationship. Hidden risk often lives in shared dependencies, overly complex workflows, and cross-document bottlenecks.
 
-> In short: the *architecture* is a DAG of agents, and the *reasoning* uses causal DAGs. Graph structure is what makes the whole system ordered ("crystalline") instead of tangled ("rock").
+**Solution:** Built a dynamic graph visualization that uses force-directed clustering to map relationships among operational documents, entities, and shared dependencies. The system applies Operations Research triage rules to flag high-complexity workflows, shared bottlenecks, and relationship paths that deserve human review.
 
----
+**Impact:** Converts a messy operational knowledge base into a prioritized review map. Instead of asking experts to inspect everything, the graph identifies where limited review time should go first.
+<img width="975" height="788" alt="image" src="https://github.com/user-attachments/assets/8528640c-63cc-46da-b3f1-cdee67c65ba4" />
 
-## Why this exists (the problem)
-
-A working system is not the same as an optimized one. Teams ship something that runs, then it stays "good enough" forever — because improving it by hand is slow, and no one defines *what* "better" precisely means.
-
-Crystalline AI addresses both gaps:
-- **Operations Research** makes the goal explicit and measurable.
-- **The autoresearch loop** improves toward that goal automatically, with every step auditable.
-- **The multi-agent structure** keeps it modular, testable, and trustworthy.
+**What the viewer can see:**
+- Red nodes: high-complexity or high-risk workflow documents.
+- Amber nodes: shared dependency bottlenecks.
+- Dashed/high-risk edges: relationships that may transmit operational friction or risk.
+- Interactive graph layout: users can inspect clusters, dependencies, and priority targets.
 
 ---
 
-## How to solve a problem (the method)
+### 2. 🏢 Ideal Org Structure Map — AI Community Detection
 
-This repo follows a repeatable problem-solving loop, inspired by first-principles design:
+**Problem:** Formal organizational charts often do not match how work actually flows. Teams may be organized by legacy departments while daily dependencies cross multiple silos.
 
-1. **Understand the system** — map how it actually works, end to end, before changing anything.
-2. **Divide and conquer** — break the problem into logic nodes (retrieval, validation, anomaly, relationships, optimization, synthesis). Each node is one job.
-3. **Set the goal (Operations Research)** — define the objective and the constraints. What are we maximizing? What are the limits (time, cost, reviewer hours)?
-4. **Run the loop (autoresearch)** — try an approach, measure it against the goal, keep what works, discard what doesn't, iterate.
-5. **Human feedback gate** — an expert reviews consequential results; corrections become tests and "golden examples" for the next loop.
-6. **Scale only what proves out** — more users and more complexity only after the loop shows real, measured value.
+**Solution:** Applied community-detection logic to SOP dependency graphs to identify natural clusters of highly connected workflows. The output groups related processes into proposed “operational pods” based on actual dependency structure rather than administrative assumptions.
 
-> Inspiration, not claims: this mirrors how nature organizes specialized roles (ant colonies, wolf packs) and how disciplined engineering improves in fast, stable cycles. The metaphors explain the structure — the substance is the architecture, the OR goal, and the measured loop.
+**Impact:** Gives leaders a data-backed way to discuss restructuring, handoff reduction, and cross-functional workflow design.
+<img width="975" height="635" alt="image" src="https://github.com/user-attachments/assets/e9f5e548-917f-4ac0-b385-1ce11c3f908f" />
+<img width="975" height="313" alt="image" src="https://github.com/user-attachments/assets/f23b1d6b-91d7-4e63-972a-e39a4d008d29" />
 
----
-
-## The self-improving loop (the heart of it)
-
-```
-   Complex system (raw rock)
-            │
-            ▼
-   Operations Research  ──►  defines the GOAL + constraints
-            │                (what "best" means)
-            ▼
-   ┌──────────────────────────────────┐
-   │   AUTORESEARCH LOOP               │
-   │   try → measure vs goal → learn   │ ◄── repeats
-   │   → keep what works → improve     │
-   └──────────────────────────────────┘
-            │
-            ▼
-   Human review gate  ──►  expert validates, corrects
-            │              (corrections become tests)
-            ▼
-   Ordered, optimized system (crystal)
-```
-
-The loop is **guided** (OR sets a clear target), **measured** (every attempt is scored against the goal), **auditable** (every step is logged), and **human-checked** (an expert approves consequential changes). It is not an open-ended autonomous agent — it is a disciplined, goal-directed improvement cycle.
+**What the viewer can see:**
+- Color-coded workflow communities.
+- Highly connected SOP clusters.
+- Cross-silo dependencies that may cause coordination friction.
+- Candidate “agile org pods” based on real workflow structure.
 
 ---
 
-## The agent team (the structure)
+### 3. 🚨 Critical Path Method Map — Dependency Vulnerability Detection
 
-A coordinated team of small, specialized agents — each with one job, each passing a structured, auditable hand-off packet to the next.
+**Problem:** In complex operations, a single fragile sequence of dependencies can create cascading delay or failure, but that path is difficult to see from tables or documents alone.
 
-```
-        Management agent  (plans, assigns, coordinates)
-                │
-   ┌────────┬────────┬────────┬────────┐
- Retrieval Validation Anomaly Relationship Optimization
-  (scout)  (inspector)(worker)  (graph)      (OR)
-   └────────┴────────┴────────┴────────┘
-                │
-        Synthesis + evaluation  (merge, check, cite)
-                │
-        Human review gate  (expert decides)
-```
+**Solution:** Modeled SOP dependencies as a directed graph and identified the longest/highest-exposure dependency chain. The UI highlights the critical path so reviewers can see which sequence of tasks needs redundancy, backup capacity, or policy attention.
 
-| Agent | Job | Good model fit |
-|---|---|---|
-| Management | plans, assigns, coordinates, routes conflicts | medium LLM or rules + planner |
-| Retrieval (scout) | finds evidence, captures citations | small embedding model (MiniLM, E5, BGE) + hybrid search |
-| Validation (inspector) | checks rules, schema, data quality | rules + RoBERTa/DeBERTa classifier |
-| Anomaly (worker) | finds outliers, spikes, missingness | Isolation Forest, random forest, XGBoost, clustering |
-| Relationship (graph) | maps connections, finds gaps (GraphRAG) | NER model + graph engine (NetworkX, Neo4j) |
-| Optimization (OR) | prioritizes what humans review first, under limits | OR-Tools, linear/integer programming |
-| Synthesis + evaluation | merges, checks, cites, flags | stronger LLM in a harness |
-| Human gate | final decision on anything consequential | the expert |
+**Impact:** Helps operations leaders identify where one weak link could disrupt the broader workflow.
+<img width="975" height="736" alt="image" src="https://github.com/user-attachments/assets/feffb7d1-15f2-4e3c-987d-9525c8ebdaf3" />
 
-**Right-sized models:** use the smallest reliable model that does the job; reserve large models for the few tasks that need them.
+**What the viewer can see:**
+- Critical dependency path highlighted in high contrast.
+- Supporting dependencies shown in lower contrast.
+- Specific SOP sequence most vulnerable to cascading delay.
+- Candidate points for redundancy or intervention.
 
 ---
 
-## Structured hand-off packet (auditable, not a black box)
+### 4. 🔗 Causal AI & Counterfactual Stress Testing
 
-Each agent returns a structured packet so the whole system is inspectable:
+**Problem:** Predictive AI can show correlation, but risk leaders often need intervention answers: “What happens if this process fails?” or “How much stress can the system tolerate?”
 
-```yaml
-packet_id: "case_review_2026_001_retrieval"
-agent_role: "scout"
-task_id: "structured_disclosure_risk_review"
-risk_tier: "medium"
-output_summary:
-  finding: "Three related entities appear across multiple filings."
-  confidence: 0.82
-  status: "needs_human_review"
-sources_used:
-  - {source_id: "DOC-001", citation: "page 4, table 2"}
-assumptions:
-  - "Entity names matched using normalized names and aliases."
-limitations:
-  - "Alias matching may miss abbreviated names."
-handoff_to_next_agent:
-  next_agent: "relationship_agent"
-human_review:
-  required: true
-  reason: "Relationship finding may affect regulated review."
-```
+**Solution:** Built a DAG-style counterfactual simulation layer that lets a user select a root node, inject a synthetic failure or stress level, and observe downstream ripple effects. A dynamic sensitivity chart shows how vulnerability scales as the root-cause failure probability increases.
 
-It records what was searched, what was found, what was *not* found, the assumptions, the confidence, and why a human should review. That is what makes the loop trustworthy.
+**Impact:** Moves the demo from passive prediction toward active scenario testing. It gives risk reviewers a way to reason about thresholds, downstream exposure, and human review priorities before a real incident occurs.
+<img width="975" height="461" alt="image" src="https://github.com/user-attachments/assets/f9a59c6a-1769-4a5d-952d-0cb20e0c6d08" />
+<img width="975" height="414" alt="image" src="https://github.com/user-attachments/assets/015998b1-04ac-47c6-ac94-a7b1cd3f68f7" />
+
+**What the viewer can see:**
+- Selectable intervention target.
+- Downstream impact report.
+- Directed causal/risk graph.
+- Dose-response sensitivity curve from low to high stress.
 
 ---
 
-## Demos (synthetic data)
+### 5. 📊 Executive Risk & ROI Dashboard
 
-- **Graph detection + Operations Research triage** — graph rules flag relationship issues (peer outliers, shared-auditor clusters, cross-filing mismatches);
-- ## 🚀 Latest Update: Operations Research & Causal AI Dashboards
+**Problem:** Graph metrics such as betweenness centrality, dependency length, and causal edge weights are useful to data scientists, but too abstract for executive budget or policy decisions.
 
-We have drastically expanded **Crystalline AI** from a standard GraphRAG knowledge base into a dynamic, mathematical **Operations Research and Risk Engine**. 
+**Solution:** Built an executive dashboard that translates graph mathematics into decision-oriented views:
+- **Vulnerability Tornado Chart:** ranks the most important systemic bottlenecks.
+- **Intervention ROI Waterfall:** estimates how much systemic risk falls after fixing top vulnerabilities.
+- **Cross-Domain Contagion Heatmap:** shows where risk may transmit across workflow domains.
 
-By applying Graph Theory, Community Detection, and do-calculus to standard messy text documents (SOPs), Crystalline AI now acts as an automated consultant for organizational design and risk management.
+**Impact:** Bridges data science and leadership action. The dashboard explains which interventions give the largest risk reduction and why those items should be prioritized.
+<img width="585" height="1350" alt="image" src="https://github.com/user-attachments/assets/027fab76-8ff8-4816-a6fa-e510274e9329" />
 
-### 📊 New Modules & Capabilities
-
-#### 1. 💎 Crystalline Triage Graph (Automated Bottleneck Detection)
-The Problem: Audit teams and risk managers have limited time and budgets. They cannot manually review hundreds of complex, interdependent Standard Operating Procedures (SOPs) and often don't know where the hidden structural risks lie.
-
-The Solution: Implemented a force-directed clustering algorithm (Barnes-Hut physics) that maps document relationships. It automatically applies Operations Research triage rules to flag overly complex workflows (Red Nodes) and shared, high-dependency bottlenecks (Amber Nodes).
-
-The Impact: Transforms a tangled, messy knowledge base into a prioritized operations matrix. It directs limited human expert hours exclusively to the highest-risk structural vulnerabilities, massively increasing audit efficiency.
-
-Applies a **Barnes-Hut physics clustering algorithm** to dynamically group highly coupled operational data into distinct visual "hives."
-* **Systemic Triage:** Instantly flags hyper-complex workflows (Red Nodes) and shared structural bottlenecks (Amber Nodes).
-* **Visualizing Friction:** High-risk relationships (complex docs relying on shared vulnerable entities) are isolated with red dashed lines, showing teams exactly where to allocate audit hours.
-* <img width="1126" height="910" alt="image" src="https://github.com/user-attachments/assets/c4c8c71b-e749-4754-92c3-855479353e5e" />
-
-<img width="778" height="506" alt="image" src="https://github.com/user-attachments/assets/5153e5b7-a665-4963-b78a-a9a170871052" />
-
-
-#### 2. 🏢 Ideal Org Structure Map (AI Community Detection)
-The Problem: Legacy organizational structures (departments/silos) often misalign with actual day-to-day operational workflows, causing communication friction, delayed hand-offs, and administrative overhead.
-
-The Solution: Applied NetworkX Greedy Modularity (Louvain-based community detection algorithms) to trace actual SOP dependencies and mathematically cluster them into optimized, cross-functional "Agile Org Pods."
-
-The Impact: Provides executive leadership with a purely data-backed blueprint for organizational restructuring. It minimizes inter-departmental friction and breaks down isolated operational silos by grouping teams based on actual workflow reality.
-<img width="1470" height="472" alt="image" src="https://github.com/user-attachments/assets/e66cc292-9129-4d1b-83c4-af17a250a0f7" />
-
-Answers the question: *"Based on how our processes actually interact, how should our teams be structured?"*
-* Utilizes **NetworkX Greedy Modularity (Louvain-based algorithm)** to map the hidden structure of enterprise workflows.
-* Automatically clusters highly interconnected SOPs into isolated, color-coded "Agile Org Pods."
-* Provides a data-backed blueprint for departmental restructuring, minimizing inter-departmental communication overhead and silos.
-<img width="656" height="452" alt="image" src="https://github.com/user-attachments/assets/645eb763-0dc3-46d9-89fb-d8b51c7797ca" />
-
-
-#### 3. 🚨 Critical Path Method (CPM) Vulnerability Map
-The Problem: In complex enterprise systems, it is incredibly difficult to identify which specific sequence of tasks, if delayed or compromised, will cause a cascading failure across the entire operational pipeline.
-
-The Solution: Architected a Directed Acyclic Graph (DAG) algorithm to calculate and extract the absolute longest dependency chain within the enterprise knowledge base, highlighting this "Critical Path" in high-contrast visual routes.
-
-The Impact: Empowers operations directors to proactively fortify fragile workflows. It shows exactly where redundancy and backup resources must be allocated to prevent a single point of failure from halting the entire system.
-
-<img width="760" height="574" alt="image" src="https://github.com/user-attachments/assets/ac447966-9e16-44a2-81ee-f22de0ee0996" />
-Architects a Directed Acyclic Graph (DAG) analysis to calculate the longest operational dependency chain within the knowledge base.
-* Visualizes the **"Critical Path"** using weighted, high-contrast red paths.
-* Isolates the exact sequence of operational documents most susceptible to cascading delays, empowering leaders to proactively fortify fragile workflows.
-
-
-#### 4. 🔗Causal AI & Counterfactual Stress Testing (DAG & Sensitivity)
-The Problem: Traditional predictive AI only shows correlation (what might happen based on the past). It cannot answer interventional questions like "What happens if we change this specific policy?" or "How much stress can this system take?"
-
-The Solution: Built a do-calculus simulation engine that allows users to select a specific node, inject a failure, and calculate the downstream mathematical ripple effect. Added a dynamic Dose-Response Sensitivity chart to plot failure probabilities from 1% to 100% severity.
-
-The Impact: Shifts enterprise AI from passive prediction to active strategic simulation. It allows Risk Officers to "stress-test" policies and establish mathematical safety thresholds before a real-world crisis occurs.
-<img width="1139" height="539" alt="image" src="https://github.com/user-attachments/assets/e5e6787f-2cdb-4eb3-b6b3-1ae76100116e" />
-<img width="1319" height="560" alt="image" src="https://github.com/user-attachments/assets/e909b1a8-3de4-49af-9718-6149455b1380" />
-
-* **Mathematical Ripple Effects:** Select any single point of failure (SOP) and run a "What-If" (`do-calculus`) simulation to see exactly which downstream processes will collapse.
-* **Sensitivity Analysis:** Generates dynamic Dose-Response charts detailing how total system vulnerability scales as a root-cause document's failure likelihood increases from 0% to 100%.
-
-#### 5. 📊Executive Risk & ROI Dashboard (Tornado, Waterfall, Heatmap)
-The Problem: In complex enterprise systems, it is incredibly difficult to identify which specific sequence of tasks, if delayed or compromised, will cause a cascading failure across the entire operational pipeline.
-
-The Solution: Architected a Directed Acyclic Graph (DAG) algorithm to calculate and extract the absolute longest dependency chain within the enterprise knowledge base, highlighting this "Critical Path" in high-contrast visual routes.
-
-The Impact: Empowers operations directors to proactively fortify fragile workflows. It shows exactly where redundancy and backup resources must be allocated to prevent a single point of failure from halting the entire system.
-While the network graphs provide deep operational context for engineers, the Executive Dashboard translates graph mathematics into high-level business intelligence:
-* **Vulnerability Tornado Chart:** Translates *Betweenness Centrality* scores into a ranked list of the most dangerous systemic bottlenecks.
-* **Intervention ROI Waterfall:** Quantifies the exact systemic risk reduction (Return on Investment) achieved by fixing the top 3 most vulnerable SOPs.
-* **Cross-Domain Contagion Heatmap:** Maps causal influence weights into a matrix, revealing hidden friction and risk transmission between different departments (e.g., IT vs. Lab Ops).
-
-<img width="409" height="943" alt="image" src="https://github.com/user-attachments/assets/47df49bf-8eb8-4934-a497-e8999f0f6bfd" />
-
-
-<img width="1147" height="558" alt="image" src="https://github.com/user-attachments/assets/9448554c-5a4c-4bd3-af18-557e838f1533" />
-
-
-- **Causal AI with DAGs** — discovery, intervention, and counterfactual what-if (PCMCI, do-calculus) — tests whether a relationship is credible, not just correlated.
-<img width="1121" height="687" alt="image" src="https://github.com/user-attachments/assets/9fa4a7d6-1ac6-4c6e-9384-e81d1b6fcb70" />
-
-
-
-```bash
-pip install networkx matplotlib
-python or_with_charts.py
-```
-
----
-## The name
-
-A rock and a crystal can contain similar material, but the crystal is stronger because its structure is ordered. Crystalline AI turns a working-but-messy AI workflow into an ordered, modular, testable system.
-
-> The model is the brain.  
-> The architecture is the nervous system.  
-> Operations Research helps set the priority.  
-> The feedback loop helps the system improve.  
-> The human expert holds the wheel.
+**What the viewer can see:**
+- Ranked bottlenecks for review or investment.
+- Stepwise risk reduction from selected interventions.
+- Cross-domain risk transmission patterns.
+- Plain-English interpretation of graph analytics.
 
 ---
 
-## Why this matters for regulated / federal work
+## Interview Summary
 
-The same pattern fits structured disclosure, risk analysis, and oversight:
-- **Graph** describes relationships across records.
-- **Operations Research** spends scarce expert time on the highest-risk items.
-- **Causal AI** tests whether a flag is a real signal or coincidence.
-- **The loop** improves the system toward a measured goal.
-- **The human** decides anything consequential.
+This project demonstrates the migration from static analytics to a dynamic AI decision-support application:
 
-Built-in controls: permission-aware retrieval, data classification, audit logs, citation checks, run-to-run comparison, and a human review gate.
-
-
-
-### 🛠️ How to Run the New UI
-The new visualization engine is built on Flask, NetworkX, Matplotlib, and vis.js.
-
-```bash
-# Install dependencies
-pip install flask networkx matplotlib waitress httpx
-
-# Run the Crystalline Server
-python web_crystal.py
-
-
-
-## Related repositories
-
-Crystalline AI brings together components demonstrated in these repos:
-
-- **[ai-knowledge-workbench-GRAPHrag](https://github.com/daviddata-cloud/ai-knowledge-workbench-GRAPHrag)** — the GraphRAG retrieval + knowledge layer (private wiki, live web search, gap detection, multi-agent reasoning).
-- 
-- **[causal-ai-dag](https://github.com/daviddata-cloud/causal-ai-dag)** — the causal reasoning layer (DAG discovery, intervention, counterfactual what-if; PCMCI, do-calculus).
----
-## Honest scope
-
-This repository is an educational proof-of-concept reference pattern using synthetic or public demo data. It is not a deployed product, not legal, investment, enforcement, medical, or policy guidance, and not a claim about any real case, agency matter, company, market, or investigation.
-
-Causal discovery, optimization, and multi-agent evaluation depend on assumptions that must be checked against real data and domain expertise. Where the method cannot decide, the uncertainty should remain visible for human review.
-
-The goal is not automatic decision-making. The goal is to make evidence, assumptions, limitations, and review points clearer for human experts.
-
----
-## License
-
-MIT
----
+> I migrated Crystalline AI from static synthetic Python chart scripts into a live Flask-based graph analytics application. The upgraded system uses NetworkX and vis.js to provide dynamic triage graphs, community detection, critical path analysis, causal stress testing, and executive risk dashboards. The work demonstrates responsible AI design: synthetic data, visible assumptions, reproducible workflows, audit-friendly outputs, and human review before consequential decisions.
+<img width="975" height="598" alt="image" src="https://github.com/user-attachments/assets/151e5e58-3f38-4344-8e7c-0269d5e0a16f" />
