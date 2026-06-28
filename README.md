@@ -191,6 +191,51 @@ The same pattern fits structured disclosure, risk analysis, and oversight:
 
 Built-in controls: permission-aware retrieval, data classification, audit logs, citation checks, run-to-run comparison, and a human review gate.
 
+## 🚀 Latest Update: Operations Research & Causal AI Dashboards
+
+We have drastically expanded **Crystalline AI** from a standard GraphRAG knowledge base into a dynamic, mathematical **Operations Research and Risk Engine**. 
+
+By applying Graph Theory, Community Detection, and do-calculus to standard messy text documents (SOPs), Crystalline AI now acts as an automated consultant for organizational design and risk management.
+
+### 📊 New Modules & Capabilities
+
+#### 1. 💎 Crystalline Triage Graph (Automated Bottleneck Detection)
+Applies a **Barnes-Hut physics clustering algorithm** to dynamically group highly coupled operational data into distinct visual "hives."
+* **Systemic Triage:** Instantly flags hyper-complex workflows (Red Nodes) and shared structural bottlenecks (Amber Nodes).
+* **Visualizing Friction:** High-risk relationships (complex docs relying on shared vulnerable entities) are isolated with red dashed lines, showing teams exactly where to allocate audit hours.
+<img width="778" height="506" alt="image" src="https://github.com/user-attachments/assets/5153e5b7-a665-4963-b78a-a9a170871052" />
+
+
+
+#### 2. 🏢 Ideal Org Structure Map (AI Community Detection)
+Answers the question: *"Based on how our processes actually interact, how should our teams be structured?"*
+* Utilizes **NetworkX Greedy Modularity (Louvain-based algorithm)** to map the hidden structure of enterprise workflows.
+* Automatically clusters highly interconnected SOPs into isolated, color-coded "Agile Org Pods."
+* Provides a data-backed blueprint for departmental restructuring, minimizing inter-departmental communication overhead and silos.
+<img width="656" height="452" alt="image" src="https://github.com/user-attachments/assets/645eb763-0dc3-46d9-89fb-d8b51c7797ca" />
+
+
+#### 3. 🚨 Critical Path Method (CPM) Vulnerability Map
+Architects a Directed Acyclic Graph (DAG) analysis to calculate the longest operational dependency chain within the knowledge base.
+* Visualizes the **"Critical Path"** using weighted, high-contrast red paths.
+* Isolates the exact sequence of operational documents most susceptible to cascading delays, empowering leaders to proactively fortify fragile workflows.
+
+
+#### 4. 🔗 Causal AI & Counterfactual Stress Testing
+* **Mathematical Ripple Effects:** Select any single point of failure (SOP) and run a "What-If" (`do-calculus`) simulation to see exactly which downstream processes will collapse.
+* **Sensitivity Analysis:** Generates dynamic Dose-Response charts detailing how total system vulnerability scales as a root-cause document's failure likelihood increases from 0% to 100%.
+
+### 🛠️ How to Run the New UI
+The new visualization engine is built on Flask, NetworkX, Matplotlib, and vis.js.
+
+```bash
+# Install dependencies
+pip install flask networkx matplotlib waitress httpx
+
+# Run the Crystalline Server
+python web_crystal.py
+
+
 
 ## Related repositories
 
