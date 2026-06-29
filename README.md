@@ -6,7 +6,7 @@
 > One big model guesses. A crystalline agent team checks, connects, optimizes, and explains.
 
 Crystalline AI dynamically parses synthetic operational text (such as internal Standard Operating Procedures) and mathematically maps their relationships, vulnerabilities, and bottlenecks in a live Flask application. It then applies graph analytics, Operations Research, and causal methods to turn a tangled knowledge base into a prioritized, auditable operations view.
-
+Metadata & tagging (the foundation). Each document carries structured metadata — controlled tags, categories, status, confidence, and wiki-links to related documents. Tags enable meaning-based search; wiki-links become the edges of the relationship graph; together they let the system reason over connections, not just keywords. AI suggests tags and a human approves, keeping them consistent and fast. Good metadata is what makes the graph, search, and reasoning accurate.
 *All demos use synthetic data only. They illustrate the method, not any real matter. The system flags candidates for human review; it does not decide outcomes. Any ROI, risk, or savings figures are illustrative on synthetic data, not real measured results.*
 
 ---
@@ -144,8 +144,8 @@ Crystalline AI parses synthetic SOP documents into relationship graphs, then app
 - **Problem:** Legacy org structures often misalign with how work actually flows, causing friction, delayed hand-offs, and overhead.
 - **Solution:** NetworkX greedy modularity (Louvain-based community detection) traces actual SOP dependencies and clusters them into optimized, cross-functional "agile pods."
 - **Impact:** Gives leadership a data-backed view of how teams could be grouped around real workflow reality, reducing silos.
+<img width="672" height="506" alt="image" src="https://github.com/user-attachments/assets/719b4e25-0ea2-42d6-b725-bbc6aa1fa161" />
 
-<img width="975" height="313" alt="image" src="https://github.com/user-attachments/assets/70d24b68-ac4b-4389-bb00-b7fba73d3f2a" />
 
 *Figure 2. Ideal Org Structure Map — AI community detection (live, synthetic data). Louvain-based community detection traces SOP dependencies and clusters them into optimized cross-functional "agile pods" (green and pink).*
 
