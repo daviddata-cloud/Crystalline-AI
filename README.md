@@ -2,7 +2,15 @@
 # Crystalline AI
 
 **Turning complex, messy systems into ordered, optimized, self-improving ones — with a human always in the loop. Human-AI co-design.**
+**One Interface for Regulated AI**
+- **Crystalline AI is built on the principle of Human-AI Codesign. This system gives knowledge workers one single interface to:
+- **Search private institutional documents semantically — not just by keyword.
+- **Find relationships between documents, entities, and topics.
+- **Detect what evidence is MISSING (Science Gap Map).
+- **Challenge AI answers from multiple perspectives (Devil's Advocate).
+- **Operate with a full audit trail and strict human review gates.
 
+The entire system rests on structured metadata. Each document carries controlled tags and wiki-links. Tags enable meaning-based search; wiki-links become the edges of the relationship graph. Together, they allow the Causal AI and Operations Research engines to reason over connections, not just keywords.
 > One big model guesses. A crystalline agent team checks, connects, optimizes, and explains.
 
 Crystalline AI dynamically parses synthetic operational text (such as internal Standard Operating Procedures) and mathematically maps their relationships, vulnerabilities, and bottlenecks in a live Flask application. It then applies graph analytics, Operations Research, and causal methods to turn a tangled knowledge base into a prioritized, auditable operations view.
