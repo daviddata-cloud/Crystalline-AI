@@ -135,7 +135,7 @@ Crystalline AI parses synthetic SOP documents into relationship graphs, then app
 - **Problem:** Audit and risk teams have limited time and cannot manually review hundreds of interdependent SOPs, and often don't know where the hidden structural risks are.
 - **Solution:** A force-directed clustering algorithm (Barnes-Hut physics) maps document relationships and applies Operations Research triage rules to flag overly complex workflows (red nodes) and shared, high-dependency bottlenecks (amber nodes).
 - **Impact:** Turns a tangled knowledge base into a prioritized operations view, directing limited expert hours to the highest-risk structural vulnerabilities.
-<img width="796" height="776" alt="image" src="https://github.com/user-attachments/assets/83bf069b-fa22-4e8c-a91e-9f6e72ca8a57" />
+<img width="608" height="700" alt="image" src="https://github.com/user-attachments/assets/939f1313-441d-4880-8b35-f11a2069401b" />
 
 
 *Figure 1. Crystalline Triage Graph — automated bottleneck detection (live, synthetic data). Red = flagged high-complexity documents; amber = shared high-dependency clusters; blue = normal docs; gray = entities. Red dashed lines isolate high-risk relationships, directing limited audit hours to the highest-risk vulnerabilities.*
