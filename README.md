@@ -1,15 +1,4 @@
-## 🚀 Latest Upgrade: From Static Charts to a Dynamic Operations Research UI
 
-Crystalline AI has evolved from static Python/Matplotlib proof-of-concept charts into an interactive Flask-based analytical application for graph reasoning, risk triage, and executive decision support.
-
-The current demo dynamically parses synthetic SOP-style operational documents, builds relationship graphs, and exposes multiple live analytical views through a web UI. The goal is not automatic decision-making. The goal is to help human experts see hidden structure, bottlenecks, causal exposure, and intervention priorities faster.
-
-**Technology stack:** Python, Flask, NetworkX, vis.js, Matplotlib, graph analytics, causal DAG concepts, Operations Research triage, and human-in-the-loop review.
-
-**Scope:** Synthetic/demo data only. The system illustrates a reusable method for regulated and enterprise workflows; it does not make claims about any real agency matter, company, case, policy, market, or investigation.
-<img width="975" height="839" alt="image" src="https://github.com/user-attachments/assets/f4fc45d8-8d80-4412-9d44-82709db003a7" />
-
----
 # Crystalline AI
 
 **Turning complex, messy systems into ordered, optimized, self-improving ones — with a human always in the loop. Human-AI co-design.**
@@ -146,6 +135,7 @@ Crystalline AI parses synthetic SOP documents into relationship graphs, then app
 - **Problem:** Audit and risk teams have limited time and cannot manually review hundreds of interdependent SOPs, and often don't know where the hidden structural risks are.
 - **Solution:** A force-directed clustering algorithm (Barnes-Hut physics) maps document relationships and applies Operations Research triage rules to flag overly complex workflows (red nodes) and shared, high-dependency bottlenecks (amber nodes).
 - **Impact:** Turns a tangled knowledge base into a prioritized operations view, directing limited expert hours to the highest-risk structural vulnerabilities.
+<img width="796" height="776" alt="image" src="https://github.com/user-attachments/assets/83bf069b-fa22-4e8c-a91e-9f6e72ca8a57" />
 
 
 *Figure 1. Crystalline Triage Graph — automated bottleneck detection (live, synthetic data). Red = flagged high-complexity documents; amber = shared high-dependency clusters; blue = normal docs; gray = entities. Red dashed lines isolate high-risk relationships, directing limited audit hours to the highest-risk vulnerabilities.*
@@ -240,3 +230,16 @@ This repository is an educational proof-of-concept reference pattern using synth
 
 ## License
 MIT
+
+## 🚀 Latest Upgrade: From Static Charts to a Dynamic Operations Research UI
+
+Crystalline AI has evolved from static Python/Matplotlib proof-of-concept charts into an interactive Flask-based analytical application for graph reasoning, risk triage, and executive decision support.
+
+The current demo dynamically parses synthetic SOP-style operational documents, builds relationship graphs, and exposes multiple live analytical views through a web UI. The goal is not automatic decision-making. The goal is to help human experts see hidden structure, bottlenecks, causal exposure, and intervention priorities faster.
+
+**Technology stack:** Python, Flask, NetworkX, vis.js, Matplotlib, graph analytics, causal DAG concepts, Operations Research triage, and human-in-the-loop review.
+
+**Scope:** Synthetic/demo data only. The system illustrates a reusable method for regulated and enterprise workflows; it does not make claims about any real agency matter, company, case, policy, market, or investigation.
+<img width="975" height="839" alt="image" src="https://github.com/user-attachments/assets/f4fc45d8-8d80-4412-9d44-82709db003a7" />
+
+---
